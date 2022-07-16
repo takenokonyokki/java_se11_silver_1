@@ -35,5 +35,27 @@ public class Chapter4Main2 {
 				System.out.print(b);
 			}
 		}
+		
+		//
+		int[] array5 = { 1, 2, 3, 4, 5 };
+		int total2 = 0;
+		for (int i : array5) {
+			if (i % 2 == 0) {
+				continue;
+//				total2 += i; //到達不能コード
+			}
+			System.out.println(total2);
+		}
+		
+		//ラベル
+		int total3 = 0;
+		a: for (int i = 0; i < 5; i++) {
+			b: for (int j = 0; j < 5; j++) {
+				if (i % 2 == 0) continue a;
+				if (3 < j) break b;
+				total3 += j;
+			}
+		}
+		System.out.println(total3);
 	}
 }
