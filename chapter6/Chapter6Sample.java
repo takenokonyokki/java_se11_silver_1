@@ -29,4 +29,12 @@ public class Chapter6Sample {
 	public int method(int a, int b) {
 		return a + b;
 	}
+	
+	//15 return文について
+	public void method(int num) {
+		if (num < 0) return;
+		System.out.println("A");
+		return; //returnで強制的に制御を戻され、これ以降は処理は実行されない
+//		System.out.println("B"); //到達不能コードとしてコンパイルエラーとなる。
+	}
 }
