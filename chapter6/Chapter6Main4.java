@@ -3,7 +3,7 @@ public class Chapter6Main4 {
 		//17
 		Chapter6Main4 m = new Chapter6Main4();
 //		System.out.println(m.calc(2,3)); //あいまいなメソッド呼出しとして、コンパイルエラーとなる。
-		}
+	}
 		private double calc(double a, int b) {
 			return (a + b) / 2;
 		}

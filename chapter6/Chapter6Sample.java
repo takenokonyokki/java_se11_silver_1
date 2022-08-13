@@ -37,4 +37,9 @@ public class Chapter6Sample {
 		return; //returnで強制的に制御を戻され、これ以降は処理は実行されない
 //		System.out.println("B"); //到達不能コードとしてコンパイルエラーとなる。
 	}
+	
+	//20 コンストラクタは戻り値型を定義できない為、下記はコンストラクタではなく、通常のメソッドとして解釈される
+	void Chapter6Sample() {
+		System.out.println("hello.");
+	}
 }
