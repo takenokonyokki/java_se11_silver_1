@@ -10,4 +10,9 @@ public interface C7A4 {
 //		return "A";
 //	}
 	
+	//7
+	default void test() {
+		System.out.println("A");
+	}
+	
 }
